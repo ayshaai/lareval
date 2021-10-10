@@ -1,7 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
+  
+use App\Http\Controllers\TwilioSMSController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,5 +29,6 @@ Route::post('/sendemail/send', 'SendEmailController@send');
 
 Route::get('/timeline', 'TweetsController@index');
 Route::get('/timeline/langchange', 'TweetsController@lang_change')->name('LangChange');
+
 
 
